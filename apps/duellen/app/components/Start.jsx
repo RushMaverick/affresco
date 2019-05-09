@@ -68,7 +68,7 @@ export default class Start extends React.Component {
             <h1>Duellen</h1>
             <p><b>{this.state.price}</b></p>
             <p className="header">Veckans Quiz</p>
-            <a href={'/Intro/' + this.state.weeklyQuiz.id}><RaisedButton label={this.state.weeklyQuiz.title} fullWidth={true} primary={true} style={btnstyles} /></a>
+            <a href={'/Intro/' + this.state.weeklyQuiz.id}><RaisedButton label={this.state.weeklyQuiz.title || 'string'} fullWidth={true} primary={true} style={btnstyles} /></a>
               <p className="header">Tidigare Quiz</p>
             {this.state.quizData.map(item => (
               <div key={item.id} style={styles}>
