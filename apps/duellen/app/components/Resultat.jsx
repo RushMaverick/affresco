@@ -60,7 +60,7 @@ export default class Resultat extends React.Component{
     return (
       <MuiThemeProvider>
         <div>
-          <div style={{backgroundColor:'#f07e26',padding: 10}}>
+          <div style={{backgroundColor:'#00BCD4',padding: 10}}>
             <BackBtn />
           </div>
 
@@ -69,8 +69,8 @@ export default class Resultat extends React.Component{
             value={this.state.slideIndex}
             onClick={this.handleChange}
           >
-            <Tab style={{backgroundColor: '#f07e26'}} label="Dina resultat" value={0} />
-            <Tab style={{backgroundColor: '#f07e26'}} label="Rätta svar" value={1} />
+            <Tab label="Dina resultat" value={0} />
+            <Tab label="Rätta svar" value={1} />
           </Tabs>
           <EmailDialog />
           <SwipeableViews
@@ -149,7 +149,7 @@ export default class Resultat extends React.Component{
                   <b>5.</b> {this.props.quizData.first_hint1} <br/>
                   <p className='progress'>Rätt svar: {this.props.quizData.first_answer}</p><br/>
 
-                  <hr style={{borderTop: '1px solid #f07e26'}}></hr><br/>
+                  <hr style={{borderTop: '1px solid #00BCD4'}}></hr><br/>
 
                   <p className='facit'>{this.props.quizData.second_category} {this.props.quizData.second_question}</p>
                   <p className='progress' style={{padding: '5px', backgroundColor:'rgba(0, 188, 212, 0.1)'}}>{this.props.right[1]}</p>
@@ -159,7 +159,7 @@ export default class Resultat extends React.Component{
                   <b>4.</b> {this.props.quizData.second_hint2} <br/>
                   <b>5.</b> {this.props.quizData.second_hint1} <br/>
                   <p className='progress'>Rätt svar: {this.props.quizData.second_answer}</p>
-                <br/><hr style={{borderTop: '1px solid #f07e26'}}></hr><br/>
+                <br/><hr style={{borderTop: '1px solid #00BCD4'}}></hr><br/>
                   <p className='facit'>{this.props.quizData.third_category} {this.props.quizData.third_question}</p>
                   <p className='progress' style={{padding: '5px', backgroundColor:'rgba(0, 188, 212, 0.1)'}}>{this.props.right[2]}</p>
                   <b>1.</b> {this.props.quizData.third_hint5} <br/>
@@ -168,7 +168,7 @@ export default class Resultat extends React.Component{
                   <b>4.</b> {this.props.quizData.third_hint2} <br/>
                   <b>5.</b> {this.props.quizData.third_hint1} <br/>
                   <p className='progress'>Rätt svar: {this.props.quizData.third_answer}</p>
-                <br/><hr style={{borderTop: '1px solid #f07e26'}}></hr><br/>
+                <br/><hr style={{borderTop: '1px solid #00BCD4'}}></hr><br/>
                   <p className='facit'>{this.props.quizData.fourth_category} {this.props.quizData.fourth_question}</p>
                   <p className='progress' style={{padding: '5px', backgroundColor:'rgba(0, 188, 212, 0.1)'}}>{this.props.right[3]}</p>
                   <b>1.</b> {this.props.quizData.fourth_hint5} <br/>
@@ -177,7 +177,7 @@ export default class Resultat extends React.Component{
                   <b>4.</b> {this.props.quizData.fourth_hint2} <br/>
                   <b>5.</b> {this.props.quizData.fourth_hint1} <br/>
                   <p className='progress'>Rätt svar: {this.props.quizData.fourth_answer}</p>
-                <br/><hr style={{borderTop: '1px solid #f07e26'}}></hr><br/>
+                <br/><hr style={{borderTop: '1px solid #00BCD4'}}></hr><br/>
                   <p className='facit'>{this.props.quizData.fifth_category} {this.props.quizData.fifth_question}</p>
                   <p className='progress' style={{padding: '5px', backgroundColor:'rgba(0, 188, 212, 0.1)'}}>{this.props.right[4]}</p>
                   <b>1.</b> {this.props.quizData.fifth_hint5} <br/>
